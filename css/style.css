@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utils */
+.flat {
+  border: none;
+  border-radius: 0;
+}
+/* end utils */
+
+.words__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.words__container span {
+  padding: 15px;
+  font-size: 16px;
+  flex: 1;
+}
+.words__container span.focused {
+  background: #eee;
+}
+.words__container span.wrong {
+  background-color: red;
+  color: white;
+}
+.time__left {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.input__word {
+  width: 300px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid black;
+  height: 30px;
+  display: block;
+  padding-left: 10px;
+  margin: 20px auto;
+}
+.btn__restart {
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+}
+.result {
+  max-width: 540px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.result > span {
+  font-size: 24px;
+  font-weight: bold;
+}
+.hidden {
+  display: none;
+}

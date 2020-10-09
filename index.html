@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Your Typing Speed</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="words__container border mt-3 mb-3"></div>
+
+      <span class="time__left mb-3" id="time-left">1:00</span>
+
+      <div class="form-group mx-auto" style="max-width: 540px">
+        <input
+          type="text"
+          id="input-word"
+          autocomplete="off"
+          class="form-control"
+          placeholder="Input something to start..."
+        />
+      </div>
+      <button class="btn btn-primary btn__restart flat btn-sm mb-3">
+        Restart
+      </button>
+
+      <div class="card mb-3 mx-auto" style="max-width: 540px">
+        <div class="card-body">
+          <div class="result">
+            <span class="result__total_words"></span>
+            <span class="result__total_right_ans"></span>
+            <span class="result__total_time"></span>
+            <span class="result__total_wpm"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
