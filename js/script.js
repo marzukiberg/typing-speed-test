@@ -117,7 +117,7 @@ function correcting() {
         state.words[state.input_state_index] === inputWordValue ? true : false,
     });
     state.input_state_index += 1;
-    console.log("Jumlah kalimat: " + state.words.length);
+    console.log("Jumlah kata: " + state.words.length);
     console.log("Index sekarang: " + state.input_state_index);
     if (state.input_state_index === state.words.length) {
       return stop();
@@ -128,12 +128,12 @@ function correcting() {
 
 function stop() {
   timeLeft.innerText = "FINISH!!!";
-  console.log("Total jumlah kalimat: " + state.words.length);
+  console.log("Total jumlah kata: " + state.words.length);
   const rightAns = state.result.filter((x) => x.ans === true);
   console.log("Total jawaban benar: " + rightAns.length);
   console.log("Total waktu anda mengetik: " + state.input_time + " detik");
-  resultTotalWords.innerText = "Jumlah Kalimat: " + state.words.length;
-  resultTotalRightAns.innerText = "Kalimat yang benar: " + rightAns.length;
+  resultTotalWords.innerText = "Jumlah Kata: " + state.words.length;
+  resultTotalRightAns.innerText = "Kata yang benar: " + rightAns.length;
   resultTotalTime.innerText = "Waktu mengetik: " + state.input_time + " detik";
   resultTotalWpm.innerText =
     "Kecepatan Mengetik: " +
