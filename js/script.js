@@ -131,10 +131,8 @@ function stop() {
   console.log("Total words: " + state.words.length);
   const rightAns = state.result.filter((x) => x.ans === true);
   console.log("Total right answers: " + rightAns.length);
-  console.log("Total typing time: " + state.input_time + " detik");
   resultTotalWords.innerText = "Total words: " + state.words.length;
   resultTotalRightAns.innerText = "Right answers: " + rightAns.length;
-  resultTotalTime.innerText = "Typing time: " + state.input_time + " detik";
   resultTotalWpm.innerText =
     "Typing speed: " +
     rightAns.length / (state.input_time / 60) +
